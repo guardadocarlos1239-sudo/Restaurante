@@ -1,0 +1,14 @@
+# Variables de entorno y credenciales
+.env
+**/.env
+
+# Archivos generados por .NET
+**/bin/
+**/obj/
+
+# Visual Studio Code
+.vscode/
+
+# Archivos de usuario de Visual Studio
+*.user
+*.suo
