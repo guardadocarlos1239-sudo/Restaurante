@@ -1,0 +1,45 @@
+
+@Restaurante.API_HostAddress = http://localhost:5137
+
+### 1. Consultar todas las comidas
+GET {{Restaurante.API_HostAddress}}/api/Comidas
+Accept: application/json
+
+###
+
+### 2. Crear una comida
+POST {{Restaurante.API_HostAddress}}/api/Comidas
+Content-Type: application/json
+
+{
+  "nombre": "Baleada Sencilla",
+  "precio": 13
+}
+
+###
+
+### 3. Consultar una comida por ID
+GET {{Restaurante.API_HostAddress}}/api/Comidas/1
+Accept: application/json
+
+###
+
+### 4. Actualizar una comida
+PUT {{Restaurante.API_HostAddress}}/api/Comidas/1
+Content-Type: application/json
+
+{
+  "nombre": "Baleada Sencilla Actualizada",
+  "precio": 15
+}
+
+###
+
+### 5. Eliminar una comida
+DELETE {{Restaurante.API_HostAddress}}/api/Comidas/1
+
+###
+
+### 6. Consultar un ID inexistente
+GET {{Restaurante.API_HostAddress}}/api/Comidas/999999
+Accept: application/json
